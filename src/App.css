@@ -8,14 +8,30 @@
 .soft {
   display: flex;
   justify-content: space-around;
-  background: linear-gradient(skyblue,white, deepskyblue);
+  background: linear-gradient(pink,white, rgb(239, 129, 148));
 }
 .soft ul {
   display: flex;
   gap: 2rem;
   font-size: 20px;
 }
-
+.footer{
+  background-color: pink;
+  display: flex;
+  justify-content: center;
+}
+.icons{
+  /* height: 70px ; */
+  
+  /* border: solid; */
+  margin: 50px;
+}
+.ic{
+  color: white;
+  gap: 10px;
+  width: 100px;
+  height: 30px;
+}
 .images {
   width: 18rem;
   height: 20rem;
@@ -25,7 +41,7 @@
   margin-left: 1rem;
   display: grid;
   justify-content: space-evenly;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 
 }
 .details {
@@ -33,10 +49,10 @@
   font-family: "Lobster", cursive;
 }
 .details span {
-  color: blue;
+  color: palevioletred;
 }
 .shop span {
-  color: blue;
+  color: palevioletred;
 }
 .link li:hover{
   font-size: 22px;

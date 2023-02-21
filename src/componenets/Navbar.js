@@ -1,11 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import {GrCart} from "react-icons/gr"
+import Marquee from "./Marquee";
 
 const Navbar = () => {
   return (
-    <div className="soft">
+    <div>
+       <div className="soft">
       <div className="shop">
-        <h2><span>BLUE</span>SHOP</h2>
+        <h2><span>PM</span>SHOP</h2>
       </div>
 
       <div className="link">
@@ -20,7 +23,7 @@ const Navbar = () => {
             <Link to="Products">Products</Link>
           </li>
           <li>
-            <Link to="Products">🛒Cart</Link>
+            <Link to="Products"><GrCart/>Cart</Link>
           </li>
           <button>LOG IN</button>
         
@@ -29,8 +32,13 @@ const Navbar = () => {
           </li>
           
         </ul>
+        <div>
+        </div>
       </div>
     </div>
+          <Marquee/>
+    </div>
+   
   );
 };
 
