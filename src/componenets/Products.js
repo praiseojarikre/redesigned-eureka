@@ -5,16 +5,16 @@ import Women from "./Women";
 import Electronics from "./Electronics";
 
 
-const Products = () => {
+const Products = ({PraiseItem,PraisecartItem, handleAddtocart}) => {
 
 
   return (
     <div className="data">
 
-      <Jewelries/>
-      <Men/>
-      <Women/>
-      <Electronics/>    
+      <Jewelries PraiseItem = {PraiseItem} PraisecartItem = {PraisecartItem} handleAddtocart = {handleAddtocart}/>
+      <Men PraiseItem = {PraiseItem} PraisecartItem = {PraisecartItem} handleAddtocart = {handleAddtocart}/>
+      <Women PraiseItem = {PraiseItem} PraisecartItem = {PraisecartItem} handleAddtocart = {handleAddtocart}/>
+      <Electronics PraiseItem = {PraiseItem} PraisecartItem = {PraisecartItem} handleAddtocart = {handleAddtocart}/>    
       
     </div>
   );

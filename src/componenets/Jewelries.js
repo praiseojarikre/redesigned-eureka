@@ -2,13 +2,15 @@ import React from 'react'
 import useFetch from './Fetcher.js/Usefetch'
 import PulseLoader from "react-spinners/PulseLoader";
 import { Link } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-
-const Jewelries = () => {
+const Jewelries = ({PraiseItem,PraisecartItem,handleAddtocart}) => {
  
  const {data, isLoading , error} = useFetch(
     'https://fakestoreapi.com/products/category/jewelery'
  )
+const notify = ()=> toast('New item added to cart')
  return(
     <div>
        
@@ -28,13 +30,13 @@ const Jewelries = () => {
             <h3>Price ${price}</h3>   
              </div>
              </Link>
-            <button>🛒 Add to cart</button> 
+            <button onClick={()=>{handleAddtocart(datum) ; notify()}}>🛒 Add to cart</button> 
 
 </div>
          
          );
        })}
-       li
+       <ToastContainer/>
         </div>
 
 

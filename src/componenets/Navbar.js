@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import {GrCart} from "react-icons/gr"
 import Marquee from "./Marquee";
 
-const Navbar = () => {
+const Navbar = ({PraiseItem}) => {
+  console.log(PraiseItem);
   return (
     <div>
        <div className="soft">
@@ -23,7 +24,7 @@ const Navbar = () => {
             <Link to="Products">Products</Link>
           </li>
           <li>
-            <Link to="Products"><GrCart/>Cart</Link>
+            <Link to="Cart"><GrCart/>Cart({PraiseItem.length})</Link>
           </li>
           <button>LOG IN</button>
         
